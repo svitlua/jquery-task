@@ -1,0 +1,115 @@
+body{
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 1em;
+  background-color: #6D7993;
+}
+
+main{
+  background-color: white;
+  width: 80%;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+h1, h2{
+  text-align: center;
+  color: #1D2731;
+}
+
+label{
+  font-weight: bold;
+}
+
+input{
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 1rem;
+  border: 1px solid #bfbfbf;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+}
+
+button{
+  margin-top: .3rem;
+}
+
+ul{
+  list-style-type: none;
+}
+li{
+  padding: .3em 1em;
+}
+
+#addPairForm{
+  display: flex;
+  flex-flow: column;
+}
+
+/*FOR DESKTOP*/
+@media screen and (min-width: 480px) {
+  .flexArea{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: .5rem;
+  }
+
+  .textArea{
+    width: 70%;
+    margin-right: 1rem;
+  }
+
+  #buttonsArea{
+    align-self: flex-start;
+    margin-top: 1.5rem;
+  }
+}
+
+/*FOR MOBILE*/
+@media screen and (max-width: 480px) {
+  .flexArea{
+    display: flex;
+    flex-flow: column;
+    margin-top: .5rem;
+  }
+  #buttonsArea{
+    align-self: stretch;
+  }
+}
+
+#buttonsArea{
+  display: flex;
+  flex-flow: column;
+  padding-top: 1rem;
+}
+
+#pairList{
+    height: 300px;
+    border: 1px solid #bfbfbf;
+    padding: 1px;
+    overflow-y: scroll;
+
+}
+
+.pairListItem{
+  cursor: pointer;
+}
+
+.pairListItem:first-child {
+    margin-top: .5rem;
+}
+.selected{
+  color: #FF4136;
+}
+
+#deleteBtn{
+  border: 1px #FF4136 solid;
+  color: #FF4136;
+}
+#addBtn{
+  border: 1px #3D9970 solid;
+  color: #3D9970;
+  margin-top: 0rem;
+}

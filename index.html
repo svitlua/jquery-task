@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery Task</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+<body>
+  <main>
+    <h1>Task</h1>
+    <h2>jQuery: Validate, Add, Delete, Sort, XML</h2>
+    <form id="addPairForm">
+      <label>Name/Value Pair</label>
+      <div class="flexArea">
+        <input type="text" name="nameValue" value="Name=Value" class="textArea">
+        <button id="addBtn" class="ui-button ui-widget ui-corner-all">Add</button>
+      </div>
+      <div class="flexArea">
+        <ul id="pairList" class="textArea">
+          <li class="pairListItem">Ocean=Pacific</li>
+          <li class="pairListItem">Route66=Highway</li>
+          <li class="pairListItem">Sea=Red</li>
+          <li class="pairListItem">3.14=Pi</li>
+          <li class="pairListItem">Desert=Kalahari</li>
+          <li class="pairListItem">Island=Madagascar</li>
+        </ul>
+        <div id="buttonsArea">
+          <button id="sortByNameBtn" class="ui-button ui-widget ui-corner-all">Sort by Name</button>
+          <button id="sortByValueBtn" class="ui-button ui-widget ui-corner-all">Sort by Value</button>
+          <button id="deleteBtn" class="ui-button ui-widget ui-corner-all">Delete</button>
+          <button id="showXMLBtn" class="ui-button ui-widget ui-corner-all">Show XML</button>
+      </div>
+      </div>
+    </form>
+    <div id="modalXML" title="Generated XML"></div>
+    <div id="errorMsg" title="Error" hidden="hidden"><p>Incorrect Input</p></div>
+  </main>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
