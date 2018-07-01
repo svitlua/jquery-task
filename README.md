@@ -1,6 +1,5 @@
 # jQuery Task
-
-## jQuery project: Validate, Add, Delete, Sort, XML
+jQuery project: Validate, Add, Delete, Sort, XML
 
 ## Web interface
 https://svitlua.github.io/jquery-task/
@@ -11,3 +10,4 @@ https://svitlua.github.io/jquery-task/
 * When the ‘Sort by Value’ button is pressed the list is sorted ascending by Value
 * When the ‘Delete’ button is pressed all selected items in the listbox are deleted
 * When the ‘Show as XML’ XML notation is generated for the list
+* Responsive web design: for desktop and mobile
